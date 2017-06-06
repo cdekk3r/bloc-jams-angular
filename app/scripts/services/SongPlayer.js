@@ -65,7 +65,7 @@
         /**
         * @function getSongIndex
         * @desc Gets index of song in album object
-        * @type {function}
+        * @type {number}
         */
 
           var getSongIndex = function(song) {
@@ -101,7 +101,7 @@
         /**
         * @function SongPlayer.previous
         * @desc Changes to previous song
-        * @type {function}
+        * @type {onject} song
         */
 
         SongPlayer.previous = function(song) {
@@ -121,7 +121,7 @@
         /**
         * @function SongPlayer.next
         * @desc Changes to next song
-        * @type {function}
+        * @type {object} song
         */
 
         SongPlayer.next = function(song) {
