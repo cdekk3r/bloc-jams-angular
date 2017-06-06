@@ -48,11 +48,21 @@
                 /**
                 * @function fillStyle
                 * @desc determines width of seek bar playback
-                * @type {number}
+                * @type {object}
                 */
 
                 scope.fillStyle = function() {
                     return {width: percentString()};
+                };
+
+                /**
+                * @function thumbStyle
+                * @desc updates position of seek bar thumb
+                * @type {object}
+                */
+
+                scope.thumbStyle = function() {
+                    return {left: percentString()};
                 };
 
                 /**
@@ -65,6 +75,7 @@
                     var percent = calculatePercent(seekBar, event);
                     scope.value = percent * scope.max;
                 };
+
 
                 /**
                 * @function trackThumb
