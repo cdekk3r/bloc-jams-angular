@@ -91,6 +91,12 @@
            */
           SongPlayer.currentTime = null;
 
+          /**
+           * @desc holds value of volume
+           * @type {Number}
+           */
+          SongPlayer.volume = null;
+
         SongPlayer.play = function(song) {
           song = song || SongPlayer.currentSong || currentAlbum.songs[0];
           if (SongPlayer.currentSong !== song) {
